@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190613-red-hat-devsecops-roadshow-philadelphia-a3dbee5fe8f089877ce920b8519fa727/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190403-red-hat-devsecops-roadshow-houston-4ec1ca04f642f17fb75267b7fe7a3ee8/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190402-red-hat-devsecops-roadshow-austin-82c39d235906b8548fc67cb222f45413/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190321-red-hat-devsecops-roadshow-arlington-fefa31f9ca3285a41c8c3780f234c02c/</loc>
+    <lastmod>2019-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190307-red-hat-devsecops-roadshow-raleigh-b2cbef686d8a4361eb2a83da20eef92c/</loc>
+    <lastmod>2019-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190220-red-hat-devsecops-roadshow-miami-3691a4369ab0dfb5dbc946585cff3905/</loc>
+    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190213-red-hat-devsecops-roadshow-seattle-1b0819fe9a3a0143916eee741385198c/</loc>
+    <lastmod>2019-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190212-red-hat-devsecops-roadshow-portland-68703333bdc54795892f65ab9acdaf74/</loc>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190207-agile-integration-with-apis-containers-tampa-aaf6647387c9bbbdbb592aa3cfc9472b/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190205-agile-integration-with-apis-containers-atlanta-9a94b5fb7dc1759802726a85bd82769a/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190124-agile-integration-with-apis-containers-philadelphia-5c4115b7dcbb5b8f334caf1fb4df9d90/</loc>
+    <lastmod>2019-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190124-agile-integration-with-apis-containers-san-diego-af2f15ac70589a3163e6e84927a3849b/</loc>
+    <lastmod>2019-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190123-agile-integration-with-apis-containers-nashville-6f29eb09a350d23a5814e1a414d813b8/</loc>
+    <lastmod>2019-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/20190117-rhhi-workshop-mclean-2858c5ba559bab8baf98d6d7d2130997/</loc>
+    <lastmod>2019-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/source_to_image/conclusion/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/containers_101/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/example/ideas/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/example/create_a_new_workshop/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/events/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/example/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/containers_101/exercise1.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise1.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise1.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/containers_101/exercise1.1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise1.1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise1.1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.10/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.11/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.12/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.13/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.14/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.15/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.16/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.17/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.18/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.19/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise1.2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise1.2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/containers_101/exercise1.2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.20/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise1.3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise1.3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/containers_101/exercise1.3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise1.4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise1.4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/containers_101/exercise1.4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.5/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.5/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.5/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise1.5/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise1.5/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.6/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.6/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.6/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.7/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.7/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.7/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.8/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.8/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.8/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/exercise1.9/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/exercise1.9/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/exercise1.9/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise10/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise2.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise2.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise2.1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise2.1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise2.2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise2.2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/exercise3.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/exercise3.0/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise5/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise6/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise7/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise8/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/exercise9/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/fin/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/fin/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/fin/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/example/hugo_shortcodes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/1_introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/strangling_the_monolith/lab1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/source_to_image/containerize_app/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/source_to_image/gochat_s2i/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/strangling_the_monolith/login_tour_oc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/strangling_the_monolith/login_tour_wetty/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/strangling_the_monolith/lab3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/source_to_image/dice/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/source_to_image/run_the_app/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/source_to_image/source_to_image/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/strangling_the_monolith/lab2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/lab01/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab01/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/lab02/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab02/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab03/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/lab03/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab04/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/lab04/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab05/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/lab05/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab06/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/lab06/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/lab07/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab07/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/lab08/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab08/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab09/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/2_login_to_horizon/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/lab1-welcome/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab10/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab11/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab12/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab13/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab14/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab15/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab16/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/lab17/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_install/1-introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/lab2-byodocker/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/3_managing_networks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_install/2-environment/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/lab3-s2i/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/4_managing_floating_ip_addresses/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_install/3-registration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/lab4-devmanage/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/5_managing_security_groups/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_install/4-host-preparation-bastion/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/6_managing_images/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/lab5-rollbacks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_install/4-host-preparation-openshift/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/7_managing_instances/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/lab6-replicationrecovery/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_install/6-installation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/lab7-labels/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/8_using_the_cli/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_install/7-verify/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/lab8-cicd/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/9_heat/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_install/8-deploy-app/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/lab9-bluegreen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/10_storage/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/login_tour_wetty/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/login_tour_wetty/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/strangling_the_monolith/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_install/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/example/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/source_to_image/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/strangling_the_monolith/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/rhosp_101/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/</loc>
+    <lastmod>2019-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/containers_101/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/source_to_image/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/source_to_image/setup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/openshift_101_dcmetromap/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/secure_software_factory/prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/agile_integrations/openshift/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/example/workshop_content/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/cloudforms41/wrapup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/jdv_dev/wrapup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_containers/wrapup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/security_openshift/wrapup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower/wrapup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/ansible_tower_azure/wrapup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://redhatgov.io/workshops/containers_101/wrapup/</loc>
+  </url>
+  
+</urlset>

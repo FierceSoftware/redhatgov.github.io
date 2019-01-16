@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lab 5: OpenShift Host Preparation | Red Hat | Public Sector</title>
+
+    
+    
+    <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly.min.css" />
+    <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly-additions.min.css" />
+
+    
+    <link rel="stylesheet" href="/node_modules/highlight.js/styles/darkula.css" />
+
+    
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/asciidoc.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script id="adobe_dtm" src="//www.redhat.com/dtm.js" type="text/javascript"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/jquery/dist/jquery.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/c3/c3.min.js"></script>
+    <script src="/node_modules/patternfly/node_modules/d3/d3.min.js"></script>
+
+    
+    
+    <script src="/node_modules/patternfly/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="/node_modules/patternfly/node_modules/drmonty-datatables-colvis/js/dataTables.colVis.js"></script>
+    <script src="/node_modules/patternfly/node_modules/datatables.net-colreorder/js/dataTables.colReorder.js"></script>
+
+    
+    
+    <script src="/node_modules/patternfly/dist/js/patternfly.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/patternfly-bootstrap-combobox/js/bootstrap-combobox.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/moment/min/moment.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/patternfly-bootstrap-treeview/dist/bootstrap-treeview.min.js"></script>
+
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+    
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/clip.js"></script>
+    
+    <script src="/node_modules/highlight.js/lib/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body class="">
+    
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top " role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="/img/brand.png" alt="Red Hat | Public Sector" />
+      </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        
+        
+          
+            <li>
+              <a href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/contact/">Contact</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/events/">Events</a>
+            </li>
+          
+        
+          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Workshops <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                
+                  <li>
+                    <a href="/workshops/agile_integrations/">Agile Integrations Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/ansible_tower/">Ansible Tower Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/ansible_tower_azure/">Ansible Tower Workshop on Azure</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/cloudforms41/">CloudForms Workshops</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/security_containers/">Container Security Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/containers_101/">Containers 101 Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/secure_software_factory/">DevSecOps Workshop - Secure Software Factory</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/example/">Example Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/jdv_dev/">JBoss Data Virtualization Development</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/strangling_the_monolith/">Microservices Workshop - Strangling the Monolith</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/openshift_101_dcmetromap/">OpenShift 101 - DC Metro Map Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/openshift_install/">OpenShift Install</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/security_openshift/">OpenShift Security Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/rhosp_101/">Red Hat OpenStack Platform 101</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/source_to_image/">Source to Image</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="jumbotron jumbotron-page text-center">
+  <h1>Lab 5: OpenShift Host Preparation</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <p class="text-center">
+      
+      <a href="http://redhatgov.io/workshops/openshift_install">Return to Workshop</a>
+    </p>
+    
+    
+
+
+
+
+
+
+
+<nav>
+  <ul class="pager">
+    
+      <li class="previous">
+        <a href="http://redhatgov.io/workshops/openshift_install/4-host-preparation-bastion/">&larr; Previous: Lab 4: Bastion Host Preparation</a>
+      </li>
+    
+    
+      <li class="next">
+        <a href="http://redhatgov.io/workshops/openshift_install/6-installation/">Next: Lab 6: Installation &rarr;</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+    
+
+<h2 id="all-nodes">All Nodes</h2>
+
+<p>The steps in this lab will be done on all of your nodes, not the bastion node.</p>
+
+<p>Start by opening an SSH session to each of your nodes, from your <strong>bastion</strong> host:</p>
+
+
+
+
+  <div class="alert alert-info">
+    
+    <span class="pficon pficon-info"></span>
+    <p><strong>Information</strong></p>
+
+<p>You <em>should</em> be able to use the shortnames below from your bastion host, but
+if they are not working, use the fully qualified domain names for your hosts
+(i.e. <code>master.studentXX.example.com</code>)</p>
+
+  </div>
+
+
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh master
+ssh infra
+ssh app01
+ssh app02</code></pre></div>
+
+<h3 id="docker">Docker</h3>
+
+<p>Install <code>docker</code> on your each of your nodes.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo yum install docker-1.12.6 -y</code></pre></div>
+
+<p>Determine the block device to use for docker storage on each of your nodes.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">lsblk</code></pre></div>
+
+<p>You're looking for the disk that has not been partitioned. This device should
+be <code>/dev/xvdb</code>, but that may change due to changes in AWS instances. Your
+output should look similar to:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">NAME    MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+xvda    202:0    0  50G  0 disk
+├─xvda1 202:1    0   1M  0 part
+└─xvda2 202:2    0  50G  0 part /
+<span style="background-color:#3c3d38;display:block;width:100%">xvdb    202:16   0  20G  0 disk</span></code></pre></div>
+
+<p>Create storage configuration for docker on each of your nodes. Be sure to use
+the name of the device from the previous step for the <code>DEVS</code> option in the
+command below.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;
+</span><span style="color:#e6db74">DEVS=/dev/xvdb
+</span><span style="color:#e6db74">VG=docker-vg
+</span><span style="color:#e6db74">&#34;</span> | sudo tee -a /etc/sysconfig/docker-storage-setup</code></pre></div>
+
+<p>Run <code>docker-storage-setup</code> to configure local docker storage on each of your nodes.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo docker-storage-setup</code></pre></div>
+
+<p>Start and enable the <code>docker</code> service on each of your nodes.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl enable docker
+sudo systemctl start docker
+sudo systemctl status docker</code></pre></div>
+
+
+    
+
+
+
+
+
+
+
+<nav>
+  <ul class="pager">
+    
+      <li class="previous">
+        <a href="http://redhatgov.io/workshops/openshift_install/4-host-preparation-bastion/">&larr; Previous: Lab 4: Bastion Host Preparation</a>
+      </li>
+    
+    
+      <li class="next">
+        <a href="http://redhatgov.io/workshops/openshift_install/6-installation/">Next: Lab 6: Installation &rarr;</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+    <p class="text-center">
+      
+      <a href="http://redhatgov.io/workshops/openshift_install">Return to Workshop</a>
+    </p>
+  </div>
+</div>
+
+    <div id="page-footer" class="container">
+      <p class="text-center">
+        Copyright &copy; 2019 Red Hat, Inc.
+      </p>
+    </div>
+    <script type="text/javascript">
+      if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+          _satellite.pageBottom();
+      }
+    </script>
+  </body>
+</html>
+

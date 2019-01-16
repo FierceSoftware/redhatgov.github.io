@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lab 7: Verify Environment | Red Hat | Public Sector</title>
+
+    
+    
+    <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly.min.css" />
+    <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly-additions.min.css" />
+
+    
+    <link rel="stylesheet" href="/node_modules/highlight.js/styles/darkula.css" />
+
+    
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/asciidoc.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script id="adobe_dtm" src="//www.redhat.com/dtm.js" type="text/javascript"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/jquery/dist/jquery.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/c3/c3.min.js"></script>
+    <script src="/node_modules/patternfly/node_modules/d3/d3.min.js"></script>
+
+    
+    
+    <script src="/node_modules/patternfly/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="/node_modules/patternfly/node_modules/drmonty-datatables-colvis/js/dataTables.colVis.js"></script>
+    <script src="/node_modules/patternfly/node_modules/datatables.net-colreorder/js/dataTables.colReorder.js"></script>
+
+    
+    
+    <script src="/node_modules/patternfly/dist/js/patternfly.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/patternfly-bootstrap-combobox/js/bootstrap-combobox.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/moment/min/moment.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/patternfly-bootstrap-treeview/dist/bootstrap-treeview.min.js"></script>
+
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+    
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/clip.js"></script>
+    
+    <script src="/node_modules/highlight.js/lib/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body class="">
+    
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top " role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="/img/brand.png" alt="Red Hat | Public Sector" />
+      </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        
+        
+          
+            <li>
+              <a href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/contact/">Contact</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/events/">Events</a>
+            </li>
+          
+        
+          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Workshops <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                
+                  <li>
+                    <a href="/workshops/agile_integrations/">Agile Integrations Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/ansible_tower/">Ansible Tower Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/ansible_tower_azure/">Ansible Tower Workshop on Azure</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/cloudforms41/">CloudForms Workshops</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/security_containers/">Container Security Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/containers_101/">Containers 101 Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/secure_software_factory/">DevSecOps Workshop - Secure Software Factory</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/example/">Example Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/jdv_dev/">JBoss Data Virtualization Development</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/strangling_the_monolith/">Microservices Workshop - Strangling the Monolith</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/openshift_101_dcmetromap/">OpenShift 101 - DC Metro Map Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/openshift_install/">OpenShift Install</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/security_openshift/">OpenShift Security Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/rhosp_101/">Red Hat OpenStack Platform 101</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/source_to_image/">Source to Image</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="jumbotron jumbotron-page text-center">
+  <h1>Lab 7: Verify Environment</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <p class="text-center">
+      
+      <a href="http://redhatgov.io/workshops/openshift_install">Return to Workshop</a>
+    </p>
+    
+    
+
+
+
+
+
+
+
+<nav>
+  <ul class="pager">
+    
+      <li class="previous">
+        <a href="http://redhatgov.io/workshops/openshift_install/6-installation/">&larr; Previous: Lab 6: Installation</a>
+      </li>
+    
+    
+      <li class="next">
+        <a href="http://redhatgov.io/workshops/openshift_install/8-deploy-app/">Next: Lab 8: Deploy Sample Application &rarr;</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+    
+
+<h2 id="summary">Summary</h2>
+
+<p>During this lab, we will verify that the OpenShift components in our environment
+are deployed as expceted and are up and running.</p>
+
+<p>Go ahead and navigate to the Web Console for your cluster to ensure that you
+are able to access the login screen.</p>
+
+<p>The URL to your Web Console will be in the format of <a href="https://studentXX.example.com/">https://studentXX.example.com/</a>.</p>
+
+<h2 id="cluster-admin">Cluster Admin</h2>
+
+<p>To start, you need to create a user with the <code>cluster-admin</code> role that can be
+used to see all of the OpenShift components and projects.</p>
+
+<p>During installation, a user with the <code>cluster-admin</code> role is created for you,
+but this use is only available from the OpenShift <strong>master</strong> node and uses
+certificates to login. The username for this user is <code>system:admin</code>.</p>
+
+<p>The <code>system:admin</code> user can be used from the CLI on the <strong>master</strong> node, but
+you cannot use this user to login to the Web Console as that requires a password,
+which the <code>system:admin</code> user does not have.</p>
+
+<h3 id="create-user">Create User</h3>
+
+<p>Since we used the <code>HTPasswd</code> identity provider for this installation, you are
+going to create user credentials for your cluster. The file that contains the
+users for your <code>HTPasswd</code> identity provider is located at
+<code>/etc/origin/master/htpasswd</code> on the <strong>master</strong> node.</p>
+
+<p>Connect to your <strong>master</strong> node via SSH and run the following command to create a
+user in your <code>/etc/origin/master/htpasswd</code> file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo htpasswd -b /etc/origin/master/htpasswd admin openshift123</code></pre></div>
+
+<p>You can now log into the Web Console using the username <code>admin</code> and password
+<code>openshift123</code>.</p>
+
+<h3 id="attach-role">Attach Role</h3>
+
+<p>When you login using the user you created above, you'll notice that you do
+not have any projects of your own and you cannot see the projects used for the
+OpenShift components.</p>
+
+<p>You must attach the <code>cluster-admin</code> role to your <code>admin</code> user.</p>
+
+<p>Connect to your <strong>master</strong> node via SSH and run the following command to attach
+the <code>cluster-admin</code> role to your <code>admin</code> user.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">oc adm policy add-cluster-role-to-user cluster-admin admin</code></pre></div>
+
+<p>If you take a look at your browser, you should now see several projects appear
+that contain the OpenShift components. One of these projects should be named
+<code>default</code>.</p>
+
+<h2 id="verify-openshift-components">Verify OpenShift Components</h2>
+
+<p>Let's verify that each of the deployed OpenShift components are running as
+expected.</p>
+
+<p>In the sections below, you will see the way to check for each component via
+the CLI as well as the Web Console. Click on the <strong>CLI</strong> or <strong>Web Console</strong>
+header to show and hide that section.</p>
+
+<h3 id="registry-and-router">Registry and Router</h3>
+
+<p>The OpenShift Registry, including Registry Console, and the OpenShift router
+run in the <code>default</code> project.</p>
+
+<p>Verify that each of them has successfully started.</p>
+
+<div class="panel-group">
+  
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      
+      <a data-toggle="collapse" href="#collapse44672f23b32f5336b540abd2d574cebb" class="collapsed">
+      
+        CLI
+      </a>
+    </h4>
+  </div>
+  
+  <div id="collapse44672f23b32f5336b540abd2d574cebb" class="panel-collapse collapse ">
+  
+    <div class="panel-body">
+       <p>To verify the <code>registry</code>, <code>registry-console</code>, and <code>router</code> are running,
+take a look at the <code>DeploymentConfig</code> for each of them.</p>
+
+<p>The <code>DESIRED</code> and <code>CURRENT</code> values should match for each.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">oc get deploymentconfig -n default</code></pre></div>
+
+<p>Expected output:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>ec2-user@master ~<span style="color:#f92672">]</span>$ oc get deploymentconfig -n default
+NAME               REVISION   DESIRED   CURRENT   TRIGGERED BY
+<span style="background-color:#3c3d38;display:block;width:100%">docker-registry    <span style="color:#ae81ff">1</span>          <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         config
+</span><span style="background-color:#3c3d38;display:block;width:100%">registry-console   <span style="color:#ae81ff">1</span>          <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         config
+</span><span style="background-color:#3c3d38;display:block;width:100%">router             <span style="color:#ae81ff">1</span>          <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         config</span></code></pre></div>
+
+<p>As an additional check, take a look at the <code>Pod</code> for each of them.</p>
+
+<p>The <code>STATUS</code> should be <code>Running</code> and <code>READY</code> should be <code>1/1</code>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">oc get pod -n default</code></pre></div>
+
+<p>Expected output:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>ec2-user@master ~<span style="color:#f92672">]</span>$ oc get pod -n default
+NAME                       READY     STATUS    RESTARTS   AGE
+<span style="background-color:#3c3d38;display:block;width:100%">docker-registry-1-xhhk0    <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          12m
+</span><span style="background-color:#3c3d38;display:block;width:100%">registry-console-1-sxzft   <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          8m
+</span><span style="background-color:#3c3d38;display:block;width:100%">router-1-pbvw3             <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          13m</span></code></pre></div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      
+      <a data-toggle="collapse" href="#collapsede404229998b4ce90eb0c8ece1259ec6" class="collapsed">
+      
+        Web Console
+      </a>
+    </h4>
+  </div>
+  
+  <div id="collapsede404229998b4ce90eb0c8ece1259ec6" class="panel-collapse collapse ">
+  
+    <div class="panel-body">
+       <p>To verify the <code>registry</code>, <code>registry-console</code>, and <code>router</code> are running using
+the Web Console, select the <code>default</code> project from the dropdown at the top of
+the page and look at the things running in that project.</p>
+
+<p>You should see <code>1 pod</code> beside a dark blue circle beside each of the deployments
+as shown in the example below.</p>
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/verify_registry_router.png" />
+    
+    
+</figure>
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+<h3 id="logging">Logging</h3>
+
+<p>The OpenShift aggregated logging stack runs in the <code>logging</code> project.</p>
+
+<p>Verify that each of the components of the logging stack has successfully started.</p>
+
+<p><div class="panel-group">
+  
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      
+      <a data-toggle="collapse" href="#collapsecd26bd94a3bc767a627be95f976225fc" class="collapsed">
+      
+        CLI
+      </a>
+    </h4>
+  </div>
+  
+  <div id="collapsecd26bd94a3bc767a627be95f976225fc" class="panel-collapse collapse ">
+  
+    <div class="panel-body">
+       <p>To verify that the components of the logging stack are running, take a look at
+the <code>DeploymentConfig</code> for each of them.</p>
+
+<p>The <code>DESIRED</code> and <code>CURRENT</code> values should match for each.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">oc get deploymentconfig -n logging</code></pre></div>
+
+<p>Expected output:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>ec2-user@master ~<span style="color:#f92672">]</span>$ oc get deploymentconfig -n logging
+NAME                              REVISION   DESIRED   CURRENT   TRIGGERED BY
+<span style="background-color:#3c3d38;display:block;width:100%">logging-curator                   <span style="color:#ae81ff">1</span>          <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         config
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-es-data-master-gepxkxe9   <span style="color:#ae81ff">1</span>          <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         config
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-kibana                    <span style="color:#ae81ff">1</span>          <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         config</span></code></pre></div>
+
+<p>As an additional check, take a look at the <code>Pod</code> for each of them.</p>
+
+<p>The <code>STATUS</code> should be <code>Running</code> and <code>READY</code> should be <code>1/1</code>.</p>
+
+<p>You'll also notice some additional pods running named <code>logging-fluentd-&lt;uid&gt;</code>.
+These are the daemons that run on each node in the cluster to collect logs from
+that node. You should have one for each node, which in the case of this
+workshop you should have four (4) of them.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">oc get pod -n logging -o wide</code></pre></div>
+
+<p>Expected output:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>ec2-user@master ~<span style="color:#f92672">]</span>$ oc get pod -n logging -o wide
+NAME                                      READY     STATUS    RESTARTS   AGE
+<span style="background-color:#3c3d38;display:block;width:100%">logging-curator-1-x2c77                   <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          38m
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-es-data-master-gepxkxe9-1-bwn03   <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          39m
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-fluentd-5ljbj                     <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          38m
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-fluentd-6l5v3                     <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          38m
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-fluentd-p0b4r                     <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          38m
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-fluentd-vfkfz                     <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          38m
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-kibana-1-3d3hd                    <span style="color:#ae81ff">2</span>/2       Running   <span style="color:#ae81ff">0</span>          39m</span></code></pre></div>
+
+<p>To further show the <code>logging-fluentd-&lt;uid&gt;</code> pods running on each node, you can
+add the <code>-o wide</code> option to the previous command to show which node each pod
+is running on.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>ec2-user@master ~<span style="color:#f92672">]</span>$ oc get pod -n logging -o wide
+NAME                                      READY     STATUS    RESTARTS   AGE       IP            NODE
+logging-curator-1-x2c77                   <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          54m       <span style="color:#ae81ff">10</span>.129.0.28   ip-10-36-114-166.ec2.internal
+logging-es-data-master-gepxkxe9-1-bwn03   <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          55m       <span style="color:#ae81ff">10</span>.129.0.24   ip-10-36-114-166.ec2.internal
+<span style="background-color:#3c3d38;display:block;width:100%">logging-fluentd-5ljbj                     <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          54m       <span style="color:#ae81ff">10</span>.130.0.2    ip-10-36-135-94.ec2.internal
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-fluentd-6l5v3                     <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          54m       <span style="color:#ae81ff">10</span>.128.0.3    ip-10-36-245-6.ec2.internal
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-fluentd-p0b4r                     <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          54m       <span style="color:#ae81ff">10</span>.131.0.2    ip-10-36-216-28.ec2.internal
+</span><span style="background-color:#3c3d38;display:block;width:100%">logging-fluentd-vfkfz                     <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          54m       <span style="color:#ae81ff">10</span>.129.0.29   ip-10-36-114-166.ec2.internal
+</span>logging-kibana-1-3d3hd                    <span style="color:#ae81ff">2</span>/2       Running   <span style="color:#ae81ff">0</span>          55m       <span style="color:#ae81ff">10</span>.129.0.26   ip-10-36-114-166.ec2.internal</code></pre></div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      
+      <a data-toggle="collapse" href="#collapseec04229fe876da30ba017598c25ccd5c" class="collapsed">
+      
+        Web Console
+      </a>
+    </h4>
+  </div>
+  
+  <div id="collapseec04229fe876da30ba017598c25ccd5c" class="panel-collapse collapse ">
+  
+    <div class="panel-body">
+       <p>To verify that the components of the logging stack are running using the Web
+Console, select the <code>logging</code> project from the dropdown at the top of the page
+and look at the things running in that project.</p>
+
+<p>You should see <code>1 pod</code> beside a dark blue circle beside each of the deployments
+as shown in the example below.</p>
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/verify_logging.png" />
+    
+    
+</figure>
+
+<p>If you also followed the CLI steps, you'll notice that the view in the Web
+Console does not show the additional pods running named <code>logging-fluentd-&lt;uid&gt;</code>.</p>
+
+<p>To view these, you can click the <strong>Applications</strong> button in the left column and
+select <strong>Pods</strong> to view the running pods. You should have one for each node,
+which in the case of this workshop you should have four (4) of them.</p>
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/verify_logging_pods.png" />
+    
+    
+</figure>
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+</p>
+
+<h3 id="metrics">Metrics</h3>
+
+<p>The OpenShift metrics stack runs in the <code>openshift-infra</code> project.</p>
+
+<p>Verify that each of the components of the metrics stack has successfully started.</p>
+
+<p><div class="panel-group">
+  
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      
+      <a data-toggle="collapse" href="#collapsef8ecaef691875b0de1ca23e8af3169bf" class="collapsed">
+      
+        CLI
+      </a>
+    </h4>
+  </div>
+  
+  <div id="collapsef8ecaef691875b0de1ca23e8af3169bf" class="panel-collapse collapse ">
+  
+    <div class="panel-body">
+       <p>To verify that the components of the metrics stack are running, take a look at
+the <code>DeploymentConfig</code> for each of them.</p>
+
+<p>The <code>DESIRED</code> and <code>CURRENT</code> values should match for each.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">oc get replicationcontroller -n openshift-infra</code></pre></div>
+
+<p>Expected output:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>ec2-user@master ~<span style="color:#f92672">]</span>$ oc get replicationcontroller -n openshift-infra
+NAME                   DESIRED   CURRENT   READY     AGE
+<span style="background-color:#3c3d38;display:block;width:100%">hawkular-cassandra-1   <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         46m
+</span><span style="background-color:#3c3d38;display:block;width:100%">hawkular-metrics       <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         46m
+</span><span style="background-color:#3c3d38;display:block;width:100%">heapster               <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         <span style="color:#ae81ff">1</span>         46m</span></code></pre></div>
+
+<p>As an additional check, take a look at the <code>Pod</code> for each of them.</p>
+
+<p>The <code>STATUS</code> should be <code>Running</code> and <code>READY</code> should be <code>1/1</code>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">oc get pod -n openshift-infra</code></pre></div>
+
+<p>Expected output:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>ec2-user@master ~<span style="color:#f92672">]</span>$ oc get pod -n openshift-infra
+NAME                         READY     STATUS    RESTARTS   AGE
+<span style="background-color:#3c3d38;display:block;width:100%">hawkular-cassandra-1-cfn61   <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          46m
+</span><span style="background-color:#3c3d38;display:block;width:100%">hawkular-metrics-473rj       <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          46m
+</span><span style="background-color:#3c3d38;display:block;width:100%">heapster-3qzs0               <span style="color:#ae81ff">1</span>/1       Running   <span style="color:#ae81ff">0</span>          46m</span></code></pre></div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      
+      <a data-toggle="collapse" href="#collapse9e2fd440135f0547be55b7d35e4b24fb" class="collapsed">
+      
+        Web Console
+      </a>
+    </h4>
+  </div>
+  
+  <div id="collapse9e2fd440135f0547be55b7d35e4b24fb" class="panel-collapse collapse ">
+  
+    <div class="panel-body">
+       <p>To verify that the components of the metrics stack are running using the Web
+Console, select the <code>openshift-infra</code> project from the dropdown at the top of
+the page and look at the things running in that project.</p>
+
+<p>You should see <code>1 pod</code> beside a dark blue circle beside each of the deployments
+as shown in the example below.</p>
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/verify_metrics.png" />
+    
+    
+</figure>
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+</p>
+
+
+    
+
+
+
+
+
+
+
+<nav>
+  <ul class="pager">
+    
+      <li class="previous">
+        <a href="http://redhatgov.io/workshops/openshift_install/6-installation/">&larr; Previous: Lab 6: Installation</a>
+      </li>
+    
+    
+      <li class="next">
+        <a href="http://redhatgov.io/workshops/openshift_install/8-deploy-app/">Next: Lab 8: Deploy Sample Application &rarr;</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+    <p class="text-center">
+      
+      <a href="http://redhatgov.io/workshops/openshift_install">Return to Workshop</a>
+    </p>
+  </div>
+</div>
+
+    <div id="page-footer" class="container">
+      <p class="text-center">
+        Copyright &copy; 2019 Red Hat, Inc.
+      </p>
+    </div>
+    <script type="text/javascript">
+      if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+          _satellite.pageBottom();
+      }
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events on Red Hat | Public Sector</title>
+    <link>http://redhatgov.io/events/</link>
+    <description>Recent content in Events on Red Hat | Public Sector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://redhatgov.io/events/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Red Hat DevSecOps Roadshow - Philadelphia</title>
+      <link>http://redhatgov.io/events/20190613-red-hat-devsecops-roadshow-philadelphia-a3dbee5fe8f089877ce920b8519fa727/</link>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190613-red-hat-devsecops-roadshow-philadelphia-a3dbee5fe8f089877ce920b8519fa727/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat DevSecOps Roadshow - Houston</title>
+      <link>http://redhatgov.io/events/20190403-red-hat-devsecops-roadshow-houston-4ec1ca04f642f17fb75267b7fe7a3ee8/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190403-red-hat-devsecops-roadshow-houston-4ec1ca04f642f17fb75267b7fe7a3ee8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat DevSecOps Roadshow - Austin</title>
+      <link>http://redhatgov.io/events/20190402-red-hat-devsecops-roadshow-austin-82c39d235906b8548fc67cb222f45413/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190402-red-hat-devsecops-roadshow-austin-82c39d235906b8548fc67cb222f45413/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat DevSecOps Roadshow - Arlington</title>
+      <link>http://redhatgov.io/events/20190321-red-hat-devsecops-roadshow-arlington-fefa31f9ca3285a41c8c3780f234c02c/</link>
+      <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190321-red-hat-devsecops-roadshow-arlington-fefa31f9ca3285a41c8c3780f234c02c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat DevSecOps Roadshow - Raleigh</title>
+      <link>http://redhatgov.io/events/20190307-red-hat-devsecops-roadshow-raleigh-b2cbef686d8a4361eb2a83da20eef92c/</link>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190307-red-hat-devsecops-roadshow-raleigh-b2cbef686d8a4361eb2a83da20eef92c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat DevSecOps Roadshow - Miami</title>
+      <link>http://redhatgov.io/events/20190220-red-hat-devsecops-roadshow-miami-3691a4369ab0dfb5dbc946585cff3905/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190220-red-hat-devsecops-roadshow-miami-3691a4369ab0dfb5dbc946585cff3905/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat DevSecOps Roadshow - Seattle</title>
+      <link>http://redhatgov.io/events/20190213-red-hat-devsecops-roadshow-seattle-1b0819fe9a3a0143916eee741385198c/</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190213-red-hat-devsecops-roadshow-seattle-1b0819fe9a3a0143916eee741385198c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat DevSecOps Roadshow - Portland</title>
+      <link>http://redhatgov.io/events/20190212-red-hat-devsecops-roadshow-portland-68703333bdc54795892f65ab9acdaf74/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190212-red-hat-devsecops-roadshow-portland-68703333bdc54795892f65ab9acdaf74/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile Integration with API&#39;s &amp; Containers - Tampa</title>
+      <link>http://redhatgov.io/events/20190207-agile-integration-with-apis-containers-tampa-aaf6647387c9bbbdbb592aa3cfc9472b/</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190207-agile-integration-with-apis-containers-tampa-aaf6647387c9bbbdbb592aa3cfc9472b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile Integration with API&#39;s &amp; Containers - Atlanta</title>
+      <link>http://redhatgov.io/events/20190205-agile-integration-with-apis-containers-atlanta-9a94b5fb7dc1759802726a85bd82769a/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190205-agile-integration-with-apis-containers-atlanta-9a94b5fb7dc1759802726a85bd82769a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile Integration with API&#39;s &amp; Containers - Philadelphia</title>
+      <link>http://redhatgov.io/events/20190124-agile-integration-with-apis-containers-philadelphia-5c4115b7dcbb5b8f334caf1fb4df9d90/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190124-agile-integration-with-apis-containers-philadelphia-5c4115b7dcbb5b8f334caf1fb4df9d90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile Integration with API&#39;s &amp; Containers - San Diego</title>
+      <link>http://redhatgov.io/events/20190124-agile-integration-with-apis-containers-san-diego-af2f15ac70589a3163e6e84927a3849b/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190124-agile-integration-with-apis-containers-san-diego-af2f15ac70589a3163e6e84927a3849b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile Integration with API&#39;s &amp; Containers - Nashville</title>
+      <link>http://redhatgov.io/events/20190123-agile-integration-with-apis-containers-nashville-6f29eb09a350d23a5814e1a414d813b8/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190123-agile-integration-with-apis-containers-nashville-6f29eb09a350d23a5814e1a414d813b8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RHHI Workshop - McLean</title>
+      <link>http://redhatgov.io/events/20190117-rhhi-workshop-mclean-2858c5ba559bab8baf98d6d7d2130997/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/events/20190117-rhhi-workshop-mclean-2858c5ba559bab8baf98d6d7d2130997/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

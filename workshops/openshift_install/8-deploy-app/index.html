@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lab 8: Deploy Sample Application | Red Hat | Public Sector</title>
+
+    
+    
+    <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly.min.css" />
+    <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly-additions.min.css" />
+
+    
+    <link rel="stylesheet" href="/node_modules/highlight.js/styles/darkula.css" />
+
+    
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/asciidoc.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script id="adobe_dtm" src="//www.redhat.com/dtm.js" type="text/javascript"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/jquery/dist/jquery.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/c3/c3.min.js"></script>
+    <script src="/node_modules/patternfly/node_modules/d3/d3.min.js"></script>
+
+    
+    
+    <script src="/node_modules/patternfly/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="/node_modules/patternfly/node_modules/drmonty-datatables-colvis/js/dataTables.colVis.js"></script>
+    <script src="/node_modules/patternfly/node_modules/datatables.net-colreorder/js/dataTables.colReorder.js"></script>
+
+    
+    
+    <script src="/node_modules/patternfly/dist/js/patternfly.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/patternfly-bootstrap-combobox/js/bootstrap-combobox.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/moment/min/moment.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/patternfly-bootstrap-treeview/dist/bootstrap-treeview.min.js"></script>
+
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+    
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/clip.js"></script>
+    
+    <script src="/node_modules/highlight.js/lib/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body class="">
+    
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top " role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="/img/brand.png" alt="Red Hat | Public Sector" />
+      </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        
+        
+          
+            <li>
+              <a href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/contact/">Contact</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/events/">Events</a>
+            </li>
+          
+        
+          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Workshops <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                
+                  <li>
+                    <a href="/workshops/agile_integrations/">Agile Integrations Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/ansible_tower/">Ansible Tower Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/ansible_tower_azure/">Ansible Tower Workshop on Azure</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/cloudforms41/">CloudForms Workshops</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/security_containers/">Container Security Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/containers_101/">Containers 101 Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/secure_software_factory/">DevSecOps Workshop - Secure Software Factory</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/example/">Example Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/jdv_dev/">JBoss Data Virtualization Development</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/strangling_the_monolith/">Microservices Workshop - Strangling the Monolith</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/openshift_101_dcmetromap/">OpenShift 101 - DC Metro Map Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/openshift_install/">OpenShift Install</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/security_openshift/">OpenShift Security Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/rhosp_101/">Red Hat OpenStack Platform 101</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/source_to_image/">Source to Image</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="jumbotron jumbotron-page text-center">
+  <h1>Lab 8: Deploy Sample Application</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <p class="text-center">
+      
+      <a href="http://redhatgov.io/workshops/openshift_install">Return to Workshop</a>
+    </p>
+    
+    
+
+
+
+
+
+
+
+<nav>
+  <ul class="pager">
+    
+      <li class="previous">
+        <a href="http://redhatgov.io/workshops/openshift_install/7-verify/">&larr; Previous: Lab 7: Verify Environment</a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+
+    
+
+<h2 id="summary">Summary</h2>
+
+<p>To wrap up this workshop, we will finish by deploying a sample application in
+our newly installed OpenShift cluster.</p>
+
+<h2 id="create-new-user">Create New User</h2>
+
+<p>To start, you will to create a new user that does not have the <code>cluster-admin</code>
+role.</p>
+
+<p>Since we used the <code>HTPasswd</code> identity provider for this installation, you are
+going to create user credentials for your cluster. The file that contains the
+users for your <code>HTPasswd</code> identity provider is located at
+<code>/etc/origin/master/htpasswd</code> on the <strong>master</strong> node.</p>
+
+<p>As we did previously when creating the <code>admin</code> user, connect to your <strong>master</strong>
+node via SSH and run the following command to create a new user in your
+<code>/etc/origin/master/htpasswd</code> file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo htpasswd -b /etc/origin/master/htpasswd user1 openshift123</code></pre></div>
+
+<p>You can now log into the Web Console using the username <code>user1</code> and password
+<code>openshift123</code>. If you are already logged in as the <code>admin</code> user, you can
+click the username dropdown in the top right corner and select <strong>Log out</strong>.</p>
+
+<h2 id="create-project">Create Project</h2>
+
+<p>When you first log in as <code>user1</code>, you'll notice that you do not have any projects.</p>
+
+<p>Start by clicking the blue <strong>Create Project</strong> button to create your first project.</p>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_create_project.png" />
+    
+    
+</figure>
+
+
+<p>In the project details, use the following values:</p>
+
+<ul>
+<li><strong>Name:</strong> <code>test-project</code></li>
+<li><strong>Display Name:</strong> <code>My Test Project</code></li>
+<li><strong>Description:</strong> &lt;empty&gt;</li>
+</ul>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_project_details.png" />
+    
+    
+</figure>
+
+
+<p>Since this is an empty project, you will be brought to a screen showing the
+available images that come with OpenShift.</p>
+
+<p>Click the <strong>Java</strong> category.</p>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_java_tile.png" />
+    
+    
+</figure>
+
+
+<p>Then click the <strong>Red Hat JBoss EAP</strong> section.</p>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_eap_tile.png" />
+    
+    
+</figure>
+
+
+<p>You will now see all of the images available that are related to JBoss EAP.</p>
+
+<p>Find the <strong>Red Hat JBoss EAP 7.0</strong> image and click the <strong>Select</strong> button.</p>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_eap7_tile.png" />
+    
+    
+</figure>
+
+
+<p>You will now be asked to fill out the details of the application you're going
+to deploy. We are going to use the example application mentioned on the page.</p>
+
+<p>Use the following values:</p>
+
+<ul>
+<li><strong>Name:</strong> <code>kitchensink</code></li>
+<li><strong>Git Repository URL:</strong> <code>https://github.com/jboss-developer/jboss-eap-quickstarts.git</code> (click the <strong>Try it</strong> link)</li>
+<li><strong>Git Reference:</strong> <code>7.0.0.GA</code> (automatically populated by the <strong>Try it</strong> link)</li>
+<li><strong>Context Dir:</strong> <code>kitchensink</code> (automatically populated by the <strong>Try it</strong> link)</li>
+</ul>
+
+<p>Then click the blue <strong>Create</strong> button at the bottom of the page.</p>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_create_details.png" />
+    
+    
+</figure>
+
+
+<p>Your application is now being built and deployed. Click the <strong>Continue to
+overview</strong> link the page to go back and watch the progress.</p>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_continue_to_overview.png" />
+    
+    
+</figure>
+
+
+<p>Click on the right arrow next to <strong>DEPLOYMENT kitchensink</strong> to expand the details.</p>
+
+<p>You should see towards the bottom of the details the output from the build of
+the application.</p>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_build.png" />
+    
+    
+</figure>
+
+
+<p>Once the build is complete, you will see a deployment of the generated application
+happen. Once that is finished, you will see the dark blue circle with <strong>1 pod</strong>
+inside of it.</p>
+
+<p>This means your application is now up and running.</p>
+
+<p>Click the URL above the <strong>DEPLOYMENT kitchensink</strong> to navgiate to your
+application. The link will be in the format of
+<a href="http://kitchensink-test-project.apps.studentXX.example.com">http://kitchensink-test-project.apps.studentXX.example.com</a></p>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_route.png" />
+    
+    
+</figure>
+
+
+<p>In a new tab, you should see the JBoss EAP kitchen sink sample application
+running.</p>
+
+
+<figure class="img-thumbnail">
+    
+        <img src="../images/app_final.png" />
+    
+    
+</figure>
+
+
+<h2 id="you-did-it">You Did It!</h2>
+
+<p>That's the end of the workshop.</p>
+
+<p>You have successfully deployed an OpenShift cluster and done an end-to-end
+test to verify that everything is functioning properly!</p>
+
+
+    
+
+
+
+
+
+
+
+<nav>
+  <ul class="pager">
+    
+      <li class="previous">
+        <a href="http://redhatgov.io/workshops/openshift_install/7-verify/">&larr; Previous: Lab 7: Verify Environment</a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+
+    <p class="text-center">
+      
+      <a href="http://redhatgov.io/workshops/openshift_install">Return to Workshop</a>
+    </p>
+  </div>
+</div>
+
+    <div id="page-footer" class="container">
+      <p class="text-center">
+        Copyright &copy; 2019 Red Hat, Inc.
+      </p>
+    </div>
+    <script type="text/javascript">
+      if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+          _satellite.pageBottom();
+      }
+    </script>
+  </body>
+</html>
+

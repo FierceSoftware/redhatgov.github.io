@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenShift Install on Red Hat | Public Sector</title>
+    <link>http://redhatgov.io/workshops/openshift_install/</link>
+    <description>Recent content in OpenShift Install on Red Hat | Public Sector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://redhatgov.io/workshops/openshift_install/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lab 1: Introduction</title>
+      <link>http://redhatgov.io/workshops/openshift_install/1-introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_install/1-introduction/</guid>
+      <description>Purpose The purpose of this workshop is to give hands-on experience with installing a multi-node OpenShift Container Platform cluster.
+There are many different configurations that can be used to install OpenShift. This workshop will only be covering one of those configurations and will demonstrate most of the common options used when installing OpenShift. The knowledge gained and methods used in this workshop should be transferrable to more advanced installations, such as high-availability, external etcd, etc.</description>
+    </item>
+    
+    <item>
+      <title>Lab 2: Environment</title>
+      <link>http://redhatgov.io/workshops/openshift_install/2-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_install/2-environment/</guid>
+      <description>Environment For this workshop, you will have your own environment to use as we go through the labs.
+Each student will be given a unique student number, in the format studentXX where XX is the student number. If you are assigned a student number less than 10, your number will be zero padded (e.g. student03).
+ Warning
+If you have NOT received a student number, please speak up now! You will need this student number to participate in this workshop.</description>
+    </item>
+    
+    <item>
+      <title>Lab 3: Node Registration</title>
+      <link>http://redhatgov.io/workshops/openshift_install/3-registration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_install/3-registration/</guid>
+      <description>Nothing To See Here For the purposes of this workshop, we have already subscribed the nodes to the repositories needed to install OpenShift.
+ Alert
+If you are participating in a workshop with this content, do NOT perform the following steps. The repositories you need have already been added to your nodes and the steps below are for reference.
+ Summary Below is a description of what would normally be required to register and subscribe your nodes in order to install OpenShift.</description>
+    </item>
+    
+    <item>
+      <title>Lab 4: Bastion Host Preparation</title>
+      <link>http://redhatgov.io/workshops/openshift_install/4-host-preparation-bastion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_install/4-host-preparation-bastion/</guid>
+      <description>Bastion Node The first set of steps for this lab will only apply to the node you will be performing your installation from. In this workshop, we will be using your bastion node for this.
+Base Packages The following base packages need to be installed your bastion node:
+ wget git net-tools bind-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct  Begin by opening an SSH connection to your bastion node:</description>
+    </item>
+    
+    <item>
+      <title>Lab 5: OpenShift Host Preparation</title>
+      <link>http://redhatgov.io/workshops/openshift_install/4-host-preparation-openshift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_install/4-host-preparation-openshift/</guid>
+      <description>All Nodes The steps in this lab will be done on all of your nodes, not the bastion node.
+Start by opening an SSH session to each of your nodes, from your bastion host:
+ Information
+You should be able to use the shortnames below from your bastion host, but if they are not working, use the fully qualified domain names for your hosts (i.e. master.studentXX.example.com)
+ ssh master ssh infra ssh app01 ssh app02 Docker Install docker on your each of your nodes.</description>
+    </item>
+    
+    <item>
+      <title>Lab 6: Installation</title>
+      <link>http://redhatgov.io/workshops/openshift_install/6-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_install/6-installation/</guid>
+      <description>Advanced Installation To install OpenShift, we will be using the Advanced Installation method which requires you to build an Ansible inventory file with variables included.
+For this lab, we will be walking through to options needed for this environment, but it is recommended to look over the other available options after this workshop to learn more about what you can configure when installing OpenShift.
+The full documentation for the advanced installation method and all of the available options can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Lab 7: Verify Environment</title>
+      <link>http://redhatgov.io/workshops/openshift_install/7-verify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_install/7-verify/</guid>
+      <description>Summary During this lab, we will verify that the OpenShift components in our environment are deployed as expceted and are up and running.
+Go ahead and navigate to the Web Console for your cluster to ensure that you are able to access the login screen.
+The URL to your Web Console will be in the format of https://studentXX.example.com/.
+Cluster Admin To start, you need to create a user with the cluster-admin role that can be used to see all of the OpenShift components and projects.</description>
+    </item>
+    
+    <item>
+      <title>Lab 8: Deploy Sample Application</title>
+      <link>http://redhatgov.io/workshops/openshift_install/8-deploy-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_install/8-deploy-app/</guid>
+      <description>Summary To wrap up this workshop, we will finish by deploying a sample application in our newly installed OpenShift cluster.
+Create New User To start, you will to create a new user that does not have the cluster-admin role.
+Since we used the HTPasswd identity provider for this installation, you are going to create user credentials for your cluster. The file that contains the users for your HTPasswd identity provider is located at /etc/origin/master/htpasswd on the master node.</description>
+    </item>
+    
+  </channel>
+</rss>

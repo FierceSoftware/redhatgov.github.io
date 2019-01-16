@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lab 6: Installation | Red Hat | Public Sector</title>
+
+    
+    
+    <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly.min.css" />
+    <link rel="stylesheet" href="/node_modules/patternfly/dist/css/patternfly-additions.min.css" />
+
+    
+    <link rel="stylesheet" href="/node_modules/highlight.js/styles/darkula.css" />
+
+    
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/asciidoc.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script id="adobe_dtm" src="//www.redhat.com/dtm.js" type="text/javascript"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/jquery/dist/jquery.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/c3/c3.min.js"></script>
+    <script src="/node_modules/patternfly/node_modules/d3/d3.min.js"></script>
+
+    
+    
+    <script src="/node_modules/patternfly/node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="/node_modules/patternfly/node_modules/drmonty-datatables-colvis/js/dataTables.colVis.js"></script>
+    <script src="/node_modules/patternfly/node_modules/datatables.net-colreorder/js/dataTables.colReorder.js"></script>
+
+    
+    
+    <script src="/node_modules/patternfly/dist/js/patternfly.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/patternfly-bootstrap-combobox/js/bootstrap-combobox.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/moment/min/moment.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/patternfly-bootstrap-treeview/dist/bootstrap-treeview.min.js"></script>
+
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    
+    <script src="/node_modules/patternfly/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+    
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/clip.js"></script>
+    
+    <script src="/node_modules/highlight.js/lib/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body class="">
+    
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top " role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="/img/brand.png" alt="Red Hat | Public Sector" />
+      </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        
+        
+          
+            <li>
+              <a href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/contact/">Contact</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/events/">Events</a>
+            </li>
+          
+        
+          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Workshops <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                
+                  <li>
+                    <a href="/workshops/agile_integrations/">Agile Integrations Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/ansible_tower/">Ansible Tower Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/ansible_tower_azure/">Ansible Tower Workshop on Azure</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/cloudforms41/">CloudForms Workshops</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/security_containers/">Container Security Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/containers_101/">Containers 101 Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/secure_software_factory/">DevSecOps Workshop - Secure Software Factory</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/example/">Example Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/jdv_dev/">JBoss Data Virtualization Development</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/strangling_the_monolith/">Microservices Workshop - Strangling the Monolith</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/openshift_101_dcmetromap/">OpenShift 101 - DC Metro Map Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/openshift_install/">OpenShift Install</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/security_openshift/">OpenShift Security Workshop</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/rhosp_101/">Red Hat OpenStack Platform 101</a>
+                  </li>
+                
+                  <li>
+                    <a href="/workshops/source_to_image/">Source to Image</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="jumbotron jumbotron-page text-center">
+  <h1>Lab 6: Installation</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <p class="text-center">
+      
+      <a href="http://redhatgov.io/workshops/openshift_install">Return to Workshop</a>
+    </p>
+    
+    
+
+
+
+
+
+
+
+<nav>
+  <ul class="pager">
+    
+      <li class="previous">
+        <a href="http://redhatgov.io/workshops/openshift_install/4-host-preparation-openshift/">&larr; Previous: Lab 5: OpenShift Host Preparation</a>
+      </li>
+    
+    
+      <li class="next">
+        <a href="http://redhatgov.io/workshops/openshift_install/7-verify/">Next: Lab 7: Verify Environment &rarr;</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+    
+
+<h2 id="advanced-installation">Advanced Installation</h2>
+
+<p>To install OpenShift, we will be using the <strong>Advanced Installation</strong> method
+which requires you to build an Ansible inventory file with variables included.</p>
+
+<p>For this lab, we will be walking through to options needed for this environment,
+but it is recommended to look over the other available options after this
+workshop to learn more about what you can configure when installing OpenShift.</p>
+
+<p>The full documentation for the advanced installation method and all of the
+available options can be found <a href="https://docs.openshift.com/container-platform/3.6/install_config/install/advanced_install.html">here</a>.</p>
+
+<h2 id="starting-template">Starting Template</h2>
+
+<p>For this workshop, you will start from the following barebones template and
+add the options you need.</p>
+
+
+
+
+  <div class="alert alert-info">
+    
+    <span class="pficon pficon-info"></span>
+    <p><strong>Information</strong></p>
+
+<p>A larger template with more options can be found on
+your <strong>bastion</strong> host at <code>/usr/share/doc/openshift-ansible-docs-&lt;OPENSHIFT_VERSION&gt;/docs/example-inventories/hosts.ose.example</code>.
+This file comes from the <code>atomic-openshift-utils</code> package.</p>
+
+  </div>
+
+
+
+<p>Start by creating a file <code>~/hosts.ose</code> in your home directory with the following
+content:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Create an OSEv3 group that contains the masters and nodes groups</span>
+<span style="color:#66d9ef">[OSEv3:children]</span>
+<span style="color:#a6e22e">masters</span>
+<span style="color:#a6e22e">nodes</span>
+<span style="color:#a6e22e">etcd</span>
+
+<span style="color:#75715e"># Set variables common for all OSEv3 hosts</span>
+<span style="color:#66d9ef">[OSEv3:vars]</span>
+
+<span style="color:#75715e"># host group for masters</span>
+<span style="color:#66d9ef">[masters]</span>
+<span style="color:#a6e22e">master.studentXX.example.com</span>
+
+<span style="color:#66d9ef">[etcd]</span>
+<span style="color:#a6e22e">master.studentXX.example.com</span>
+
+<span style="color:#75715e"># NOTE: Currently we require that masters be part of the SDN which requires that they also be nodes</span>
+<span style="color:#75715e"># However, in order to ensure that your masters are not burdened with running pods you should</span>
+<span style="color:#75715e"># make them unschedulable by adding openshift_schedulable=False any node that&#39;s also a master.</span>
+<span style="color:#66d9ef">[nodes]</span>
+<span style="color:#a6e22e">master.studentXX.example.com</span>
+<span style="color:#a6e22e">infra.studentXX.example.com</span>
+<span style="color:#a6e22e">app01.studentXX.example.com</span>
+<span style="color:#a6e22e">app02.studentXX.example.com</span></code></pre></div>
+
+
+
+
+  <div class="alert alert-info">
+    
+    <span class="pficon pficon-info"></span>
+    <p><strong>Information</strong></p>
+
+<p>If you are using <code>vim</code> to edit your <code>~/hosts.ose</code> file, save the file, close
+it, and re-open to get syntax highlighting to work.</p>
+
+  </div>
+
+
+
+<h2 id="variables">Variables</h2>
+
+<p>Most of the configuration of how to install OpenShift is done in the
+<code>[OSEv3:vars]</code> section of the inventory file. Below we will walk through sets
+of options and build out your installation configuration.</p>
+
+<h3 id="how-to-connect">How To Connect</h3>
+
+<p>You start by defining which user to use for the SSH connection to each node
+that will be used by Ansible to do during the installation.</p>
+
+<p>You'll be using the <code>ec2-user</code> to connect to your nodes. As a part
+of provisioning this lab, SSH keys were already set up for the <code>ec2-user</code>
+and copied to the <code>authorized_keys</code> file of each node.</p>
+
+<p>Since the <code>ec2-user</code> is not the root user, you need to also specify that <code>sudo</code>
+should be used for privilege escalation.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># SSH user, this user should allow ssh based auth without requiring a</span>
+<span style="color:#75715e"># password. If using ssh key based auth, then the key should be managed by an</span>
+<span style="color:#75715e"># ssh agent.</span>
+<span style="color:#a6e22e">ansible_ssh_user</span><span style="color:#f92672">=</span><span style="color:#e6db74">ec2-user</span>
+
+<span style="color:#75715e"># If ansible_ssh_user is not root, ansible_become must be set to true and the</span>
+<span style="color:#75715e"># user must be configured for passwordless sudo</span>
+<span style="color:#a6e22e">ansible_become</span><span style="color:#f92672">=</span><span style="color:#e6db74">yes</span></code></pre></div>
+
+<h3 id="deployment-type">Deployment Type</h3>
+
+<p>The deployment for this lab will be for OpenShift Container Platform, which
+was previously known as OpenShift Enterprise, therefore the option will be set
+to <code>openshift-enterprise</code>. You will be deploying version 3.6 of OpenShift for
+this workshop.</p>
+
+<p>You'll also go ahead an specify the debug level and instructing the installer
+to also install the OpenShift examples.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Debug level for all OpenShift components (Defaults to 2)</span>
+<span style="color:#a6e22e">debug_level</span><span style="color:#f92672">=</span><span style="color:#e6db74">2</span>
+
+<span style="color:#75715e"># Specify the deployment type. Valid values are origin and openshift-enterprise.</span>
+<span style="color:#a6e22e">openshift_deployment_type</span><span style="color:#f92672">=</span><span style="color:#e6db74">openshift-enterprise</span>
+
+<span style="color:#75715e"># Specify the generic release of OpenShift to install. This is used mainly just during installation, after which we</span>
+<span style="color:#75715e"># rely on the version running on the first master. Works best for containerized installs where we can usually</span>
+<span style="color:#75715e"># use this to lookup the latest exact version of the container images, which is the tag actually used to configure</span>
+<span style="color:#75715e"># the cluster. For RPM installations we just verify the version detected in your configured repos matches this</span>
+<span style="color:#75715e"># release.</span>
+<span style="color:#a6e22e">openshift_release</span><span style="color:#f92672">=</span><span style="color:#e6db74">v3.6</span>
+
+<span style="color:#75715e"># Manage openshift example imagestreams and templates during install and upgrade</span>
+<span style="color:#a6e22e">openshift_install_examples</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span></code></pre></div>
+
+<h3 id="authentication">Authentication</h3>
+
+<p>In this workshop, you will be using the <code>HTPasswd</code> identity provider.</p>
+
+
+
+
+  <div class="alert alert-info">
+    
+    <span class="pficon pficon-info"></span>
+    <p><strong>Information</strong></p>
+
+<p>The <code>HTPasswd</code> indentity provider is used in this workshop since it doesn't
+require additional infrastructure in this environment. To view the other
+authentication options, check out the docs [here][2].</p>
+
+  </div>
+
+
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># htpasswd auth</span>
+<span style="color:#a6e22e">openshift_master_identity_providers</span><span style="color:#f92672">=</span><span style="color:#e6db74">[{&#39;name&#39;: &#39;htpasswd_auth&#39;, &#39;login&#39;: &#39;true&#39;, &#39;challenge&#39;: &#39;true&#39;, &#39;kind&#39;: &#39;HTPasswdPasswordIdentityProvider&#39;, &#39;filename&#39;: &#39;/etc/origin/master/htpasswd&#39;}]</span>
+<span style="color:#75715e"># Defining htpasswd users</span>
+<span style="color:#75715e">#openshift_master_htpasswd_users={&#39;user1&#39;: &#39;&lt;pre-hashed password&gt;&#39;, &#39;user2&#39;: &#39;&lt;pre-hashed password&gt;&#39;}</span>
+<span style="color:#75715e"># or</span>
+<span style="color:#75715e">#openshift_master_htpasswd_file=&lt;path to local pre-generated htpasswd file&gt;</span></code></pre></div>
+
+<h3 id="cluster-hostnames">Cluster Hostnames</h3>
+
+<p>Your lab environment is a non-HA configuration that only contains a single
+master node. By default, the hostname for your API and Web Console would be
+set to the hostname of the <strong>master</strong> node.</p>
+
+<p>You are going to override this to be a different hostname that is more generic
+than the hostname of the master node.</p>
+
+<p>You will also set the default subdomain that will be used when deploying
+applications in OpenShift and creating routes. This hostname is already setup
+for you as a wildcard DNS entry that points to your <strong>infra</strong> node.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Native high availability cluster method with optional load balancer.</span>
+<span style="color:#75715e"># If no lb group is defined, the installer assumes that a load balancer has</span>
+<span style="color:#75715e"># been preconfigured. For installation the value of</span>
+<span style="color:#75715e"># openshift_master_cluster_hostname must resolve to the load balancer</span>
+<span style="color:#75715e"># or to one or all of the masters defined in the inventory if no load</span>
+<span style="color:#75715e"># balancer is present.</span>
+<span style="color:#a6e22e">openshift_master_cluster_method</span><span style="color:#f92672">=</span><span style="color:#e6db74">native</span>
+<span style="color:#a6e22e">openshift_master_cluster_hostname</span><span style="color:#f92672">=</span><span style="color:#e6db74">studentXX.example.com</span>
+<span style="color:#a6e22e">openshift_master_cluster_public_hostname</span><span style="color:#f92672">=</span><span style="color:#e6db74">studentXX.example.com</span>
+
+<span style="color:#75715e"># default subdomain to use for exposed routes</span>
+<span style="color:#a6e22e">openshift_master_default_subdomain</span><span style="color:#f92672">=</span><span style="color:#e6db74">apps.studentXX.example.com</span></code></pre></div>
+
+<h3 id="node-selector">Node Selector</h3>
+
+<p>When applications are deployed in OpenShift, they need a set of compute
+resources to use. You don't want these resources to come from your <strong>master</strong>
+or <strong>infra</strong> nodes. Therefore, you will set a default node selector to ensure
+your applications are deployed on the correct compute resources.</p>
+
+<p>In a later step, you will see how we label the nodes to make this work.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># default project node selector</span>
+<span style="color:#a6e22e">osm_default_node_selector</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;purpose=app&#39;</span></code></pre></div>
+
+<h3 id="openshift-router">OpenShift Router</h3>
+
+<p>The OpenShift router is a component that is required by OpenShift and is
+installed by default. However, we want to ensure that the router is running
+on the <strong>infra</strong> node.</p>
+
+<p>In a later step, you will see how we label the nodes to make this work.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># OpenShift Router Options</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># An OpenShift router will be created during install if there are</span>
+<span style="color:#75715e"># nodes present with labels matching the default router selector,</span>
+<span style="color:#75715e"># &#34;region=infra&#34;. Set openshift_node_labels per node as needed in</span>
+<span style="color:#75715e"># order to label nodes.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Example:</span>
+<span style="color:#75715e"># [nodes]</span>
+<span style="color:#75715e"># node.example.com openshift_node_labels=&#34;{&#39;region&#39;: &#39;infra&#39;}&#34;</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Router selector (optional)</span>
+<span style="color:#75715e"># Router will only be created if nodes matching this label are present.</span>
+<span style="color:#75715e"># Default value: &#39;region=infra&#39;</span>
+<span style="color:#a6e22e">openshift_hosted_router_selector</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;purpose=infra&#39;</span></code></pre></div>
+
+<h3 id="openshift-registry">OpenShift Registry</h3>
+
+<p>The OpenShift registry is another component required by OpenShift and is
+installed by default. we also want to ensure that the router is running on the
+<strong>infra</strong> node.</p>
+
+<p>The registry requires storage to persist the generated container images
+that are created in OpenShift. For this workshop, an NFS server is being run
+in the environment for each student to use.</p>
+
+
+
+
+  <div class="alert alert-warning">
+    
+    <span class="pficon pficon-warning-triangle-o"></span>
+    <p><strong>Warning</strong></p>
+
+<p>In a production environment, NFS is <strong>NOT</strong> a supported storage backend for
+the registry. You can find more information about storage options for the
+registry [here][3].</p>
+
+<p>NFS storage <strong>is</strong> supported by OpenShift for your applications.</p>
+
+  </div>
+
+
+
+<p>In a later step, you will see how we label the nodes to make this work.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Openshift Registry Options</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># An OpenShift registry will be created during install if there are</span>
+<span style="color:#75715e"># nodes present with labels matching the default registry selector,</span>
+<span style="color:#75715e"># &#34;region=infra&#34;. Set openshift_node_labels per node as needed in</span>
+<span style="color:#75715e"># order to label nodes.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Example:</span>
+<span style="color:#75715e"># [nodes]</span>
+<span style="color:#75715e"># node.example.com openshift_node_labels=&#34;{&#39;region&#39;: &#39;infra&#39;}&#34;</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Registry selector (optional)</span>
+<span style="color:#75715e"># Registry will only be created if nodes matching this label are present.</span>
+<span style="color:#75715e"># Default value: &#39;region=infra&#39;</span>
+<span style="color:#a6e22e">openshift_hosted_registry_selector</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;purpose=infra&#39;</span>
+
+<span style="color:#75715e"># Registry Storage Options</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># External NFS Host</span>
+<span style="color:#75715e"># NFS volume must already exist with path &#34;nfs_directory/volume_name&#34; on</span>
+<span style="color:#75715e"># the storage_host. For example, the remote volume path using these</span>
+<span style="color:#75715e"># options would be &#34;nfs.example.com:/exports/registry&#34;</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_kind</span><span style="color:#f92672">=</span><span style="color:#e6db74">nfs</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_access_modes</span><span style="color:#f92672">=</span><span style="color:#e6db74">[&#39;ReadWriteMany&#39;]</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_host</span><span style="color:#f92672">=</span><span style="color:#e6db74">instructor.example.com</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_nfs_directory</span><span style="color:#f92672">=</span><span style="color:#e6db74">/exports/studentXX</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_volume_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">registry</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_volume_size</span><span style="color:#f92672">=</span><span style="color:#e6db74">10Gi</span></code></pre></div>
+
+<h3 id="metrics">Metrics</h3>
+
+<p>An optional, but recommended, component of OpenShift is the metrics stack for
+monitoring the CPU, memory, and network traffic of your applications.</p>
+
+<p>The metrics stack also requires storage to persist its data. You will be using
+the NFS server set up in the lab environment for this.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Metrics deployment</span>
+<span style="color:#75715e"># See: https://docs.openshift.com/enterprise/latest/install_config/cluster_metrics.html</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># By default metrics are not automatically deployed, set this to enable them</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_deploy</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Storage Options</span>
+<span style="color:#75715e"># If openshift_hosted_metrics_storage_kind is unset then metrics will be stored</span>
+<span style="color:#75715e"># in an EmptyDir volume and will be deleted when the cassandra pod terminates.</span>
+<span style="color:#75715e"># Storage options A &amp; B currently support only one cassandra pod which is</span>
+<span style="color:#75715e"># generally enough for up to 1000 pods. Additional volumes can be created</span>
+<span style="color:#75715e"># manually after the fact and metrics scaled per the docs.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Option B - External NFS Host</span>
+<span style="color:#75715e"># NFS volume must already exist with path &#34;nfs_directory/volume_name&#34; on</span>
+<span style="color:#75715e"># the storage_host. For example, the remote volume path using these</span>
+<span style="color:#75715e"># options would be &#34;nfs.example.com:/exports/metrics&#34;</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_kind</span><span style="color:#f92672">=</span><span style="color:#e6db74">nfs</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_access_modes</span><span style="color:#f92672">=</span><span style="color:#e6db74">[&#39;ReadWriteOnce&#39;]</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_host</span><span style="color:#f92672">=</span><span style="color:#e6db74">instructor.example.com</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_nfs_directory</span><span style="color:#f92672">=</span><span style="color:#e6db74">/exports/studentXX</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_volume_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">metrics</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_volume_size</span><span style="color:#f92672">=</span><span style="color:#e6db74">10Gi</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;storage&#39;: &#39;metrics&#39;}</span>
+
+<span style="color:#75715e"># Additional metrics settings</span>
+<span style="color:#a6e22e">openshift_metrics_cassandra_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+<span style="color:#a6e22e">openshift_metrics_hawkular_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+<span style="color:#a6e22e">openshift_metrics_heapster_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span></code></pre></div>
+
+<h3 id="aggregated-logging">Aggregated Logging</h3>
+
+<p>Another optional, but recommended, component of OpenShift is the aggregated
+logging stack for capturing the log output of your applications.</p>
+
+<p>The logging stack also requires storage to persist its data. You will be using
+the NFS server set up in the lab environment for this.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Logging deployment</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Currently logging deployment is disabled by default, enable it by setting this</span>
+<span style="color:#a6e22e">openshift_hosted_logging_deploy</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Logging storage config</span>
+<span style="color:#75715e"># Option B - External NFS Host</span>
+<span style="color:#75715e"># NFS volume must already exist with path &#34;nfs_directory/volume_name&#34; on</span>
+<span style="color:#75715e"># the storage_host. For example, the remote volume path using these</span>
+<span style="color:#75715e"># options would be &#34;nfs.example.com:/exports/logging&#34;</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_kind</span><span style="color:#f92672">=</span><span style="color:#e6db74">nfs</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_access_modes</span><span style="color:#f92672">=</span><span style="color:#e6db74">[&#39;ReadWriteOnce&#39;]</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_host</span><span style="color:#f92672">=</span><span style="color:#e6db74">instructor.example.com</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_nfs_directory</span><span style="color:#f92672">=</span><span style="color:#e6db74">/exports/studentXX</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_volume_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">logging</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_volume_size</span><span style="color:#f92672">=</span><span style="color:#e6db74">10Gi</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;storage&#39;: &#39;logging&#39;}</span>
+
+<span style="color:#75715e"># Additional logging settings</span>
+<span style="color:#75715e"># See https://github.com/openshift/openshift-ansible/tree/release-3.6/roles/openshift_logging</span>
+<span style="color:#a6e22e">openshift_logging_es_cluster_size</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+<span style="color:#a6e22e">openshift_logging_es_memory_limit</span><span style="color:#f92672">=</span><span style="color:#e6db74">4G</span>
+<span style="color:#a6e22e">openshift_logging_es_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+<span style="color:#a6e22e">openshift_logging_curator_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+<span style="color:#a6e22e">openshift_logging_kibana_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span></code></pre></div>
+
+<h3 id="multitenancy">Multitenancy</h3>
+
+<p>By default, OpenShift deploys with a flat network that allows any application
+running in OpenShift to communicate with any other application within OpenShift.</p>
+
+<p>In many cases, this is not desirable so it is recommended to enable the
+multitenant plugin to lock applications down so that they can only communicate
+with the other things running within the same project, but not across projects.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Configure the multi-tenant SDN plugin (default is &#39;redhat/openshift-ovs-subnet&#39;)</span>
+<span style="color:#a6e22e">os_sdn_network_plugin_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;redhat/openshift-ovs-multitenant&#39;</span></code></pre></div>
+
+<h3 id="openshift-sdn">OpenShift SDN</h3>
+
+<p>There are two networks used in the OpenShift SDN. One for use in assigning each
+pod its own IP address. The other for assigning each service its own IP
+address.</p>
+
+<p>In this workshop, you will be using the default values. We could leave these
+options out and they would be configured to the same values we are going to be
+setting automatically.</p>
+
+<p>The reason for setting them explicitly here is to point out that these values
+cannot be changed after you install OpenShift so it is important to ensure that
+these are set to values that do not overlap CIDR ranges already existant in
+your environment.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Configure SDN cluster network and kubernetes service CIDR blocks. These</span>
+<span style="color:#75715e"># network blocks should be private and should not conflict with network blocks</span>
+<span style="color:#75715e"># in your infrastructure that pods may require access to. Can not be changed</span>
+<span style="color:#75715e"># after deployment.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># WARNING : Do not pick subnets that overlap with the default Docker bridge subnet of</span>
+<span style="color:#75715e"># 172.17.0.0/16.  Your installation will fail and/or your configuration change will</span>
+<span style="color:#75715e"># cause the Pod SDN or Cluster SDN to fail.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># WORKAROUND : If you must use an overlapping subnet, you can configure a non conflicting</span>
+<span style="color:#75715e"># docker0 CIDR range by adding &#39;--bip=192.168.2.1/24&#39; to DOCKER_NETWORK_OPTIONS</span>
+<span style="color:#75715e"># environment variable located in /etc/sysconfig/docker-network.</span>
+<span style="color:#a6e22e">osm_cluster_network_cidr</span><span style="color:#f92672">=</span><span style="color:#e6db74">10.128.0.0/14</span>
+<span style="color:#a6e22e">openshift_portal_net</span><span style="color:#f92672">=</span><span style="color:#e6db74">172.30.0.0/16</span></code></pre></div>
+
+<h3 id="api-and-web-console-port">API and Web Console Port</h3>
+
+<p>The last configuration option we will set is the ports to use for the
+OpenShift API and the Web Console.</p>
+
+<p>By default these are set to <code>8443</code>, which is a non-standard HTTPS port. To
+prevent having to type the port number each time you use the browser or log
+in to the API on the command line, you will override these to be the standard
+HTTPS port <code>443</code>.</p>
+
+<p>Add these options in the <code>[OSEv3:vars]</code> section below the options from the
+previous step(s).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Configure master API and console ports.</span>
+<span style="color:#a6e22e">openshift_master_api_port</span><span style="color:#f92672">=</span><span style="color:#e6db74">443</span>
+<span style="color:#a6e22e">openshift_master_console_port</span><span style="color:#f92672">=</span><span style="color:#e6db74">443</span></code></pre></div>
+
+<h2 id="hosts">Hosts</h2>
+
+<p>The last section of the inventory file is where we specify the actual hosts
+that will be part of the OpenShift cluster.</p>
+
+<p>In the barebones file, you already have the hostnames of your nodes specified,
+but we need to make a few modifications to tell OpenShift which nodes are
+reserved for which functions.</p>
+
+<p>If you recall in some of the previous configuration steps, we told specifc
+components to look for certain node labels to use when deploying those
+components. In this section, we will set those labels.</p>
+
+<p>We will also be telling OpenShift that the <strong>master</strong> node is not to be used
+for deploying user application by setting its scheduling to disabled.</p>
+
+<p>Update your barebones section to look like the following.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># host group for masters</span>
+<span style="color:#66d9ef">[masters]</span>
+<span style="color:#a6e22e">master.studentXX.example.com</span>
+
+<span style="color:#66d9ef">[etcd]</span>
+<span style="color:#a6e22e">master.studentXX.example.com</span>
+
+<span style="color:#75715e"># NOTE: Currently we require that masters be part of the SDN which requires that they also be nodes</span>
+<span style="color:#75715e"># However, in order to ensure that your masters are not burdened with running pods you should</span>
+<span style="color:#75715e"># make them unschedulable by adding openshift_schedulable=False any node that&#39;s also a master.</span>
+<span style="color:#66d9ef">[nodes]</span>
+<span style="color:#a6e22e">master.studentXX.example.com openshift_schedulable</span><span style="color:#f92672">=</span><span style="color:#e6db74">False</span>
+<span style="color:#a6e22e">infra.studentXX.example.com openshift_node_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{&#39;purpose&#39;: &#39;infra&#39;}&#34;</span>
+<span style="color:#a6e22e">app01.studentXX.example.com openshift_node_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{&#39;purpose&#39;: &#39;app&#39;}&#34;</span>
+<span style="color:#a6e22e">app02.studentXX.example.com openshift_node_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{&#39;purpose&#39;: &#39;app&#39;}&#34;</span></code></pre></div>
+
+<h2 id="installation">Installation</h2>
+
+<p>Now you're ready to kick off the installation process with the inventory file
+you just created.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible-playbook -i ~/hosts.ose /usr/share/ansible/openshift-ansible/playbooks/byo/config.yml</code></pre></div>
+
+<h2 id="final-inventory-example">Final Inventory Example</h2>
+
+<p>After all of the configuration steps from above, your final inventory file
+should look like the following.</p>
+
+
+
+
+  <div class="alert alert-warning">
+    
+    <span class="pficon pficon-warning-triangle-o"></span>
+    <p><strong>Warning</strong></p>
+
+<p><strong>If you are looking ahead at the steps in this lab</strong>, you are encouraged to go
+through each of the steps above one at a time instead of taking a shortcut and
+copy/pasting this file. This file is the final example but does not explain
+why you are setting each option like the above steps are.</p>
+
+  </div>
+
+
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#75715e"># Create an OSEv3 group that contains the masters and nodes groups</span>
+<span style="color:#66d9ef">[OSEv3:children]</span>
+<span style="color:#a6e22e">masters</span>
+<span style="color:#a6e22e">nodes</span>
+<span style="color:#a6e22e">etcd</span>
+
+<span style="color:#75715e"># Set variables common for all OSEv3 hosts</span>
+<span style="color:#66d9ef">[OSEv3:vars]</span>
+<span style="color:#75715e"># SSH user, this user should allow ssh based auth without requiring a</span>
+<span style="color:#75715e"># password. If using ssh key based auth, then the key should be managed by an</span>
+<span style="color:#75715e"># ssh agent.</span>
+<span style="color:#a6e22e">ansible_ssh_user</span><span style="color:#f92672">=</span><span style="color:#e6db74">ec2-user</span>
+
+<span style="color:#75715e"># If ansible_ssh_user is not root, ansible_become must be set to true and the</span>
+<span style="color:#75715e"># user must be configured for passwordless sudo</span>
+<span style="color:#a6e22e">ansible_become</span><span style="color:#f92672">=</span><span style="color:#e6db74">yes</span>
+
+<span style="color:#75715e"># Debug level for all OpenShift components (Defaults to 2)</span>
+<span style="color:#a6e22e">debug_level</span><span style="color:#f92672">=</span><span style="color:#e6db74">2</span>
+
+<span style="color:#75715e"># Specify the deployment type. Valid values are origin and openshift-enterprise.</span>
+<span style="color:#a6e22e">openshift_deployment_type</span><span style="color:#f92672">=</span><span style="color:#e6db74">openshift-enterprise</span>
+
+<span style="color:#75715e"># Specify the generic release of OpenShift to install. This is used mainly just during installation, after which we</span>
+<span style="color:#75715e"># rely on the version running on the first master. Works best for containerized installs where we can usually</span>
+<span style="color:#75715e"># use this to lookup the latest exact version of the container images, which is the tag actually used to configure</span>
+<span style="color:#75715e"># the cluster. For RPM installations we just verify the version detected in your configured repos matches this</span>
+<span style="color:#75715e"># release.</span>
+<span style="color:#a6e22e">openshift_release</span><span style="color:#f92672">=</span><span style="color:#e6db74">v3.6</span>
+
+<span style="color:#75715e"># Manage openshift example imagestreams and templates during install and upgrade</span>
+<span style="color:#a6e22e">openshift_install_examples</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span>
+
+<span style="color:#75715e"># htpasswd auth</span>
+<span style="color:#a6e22e">openshift_master_identity_providers</span><span style="color:#f92672">=</span><span style="color:#e6db74">[{&#39;name&#39;: &#39;htpasswd_auth&#39;, &#39;login&#39;: &#39;true&#39;, &#39;challenge&#39;: &#39;true&#39;, &#39;kind&#39;: &#39;HTPasswdPasswordIdentityProvider&#39;, &#39;filename&#39;: &#39;/etc/origin/master/htpasswd&#39;}]</span>
+<span style="color:#75715e"># Defining htpasswd users</span>
+<span style="color:#75715e">#openshift_master_htpasswd_users={&#39;user1&#39;: &#39;&lt;pre-hashed password&gt;&#39;, &#39;user2&#39;: &#39;&lt;pre-hashed password&gt;&#39;}</span>
+<span style="color:#75715e"># or</span>
+<span style="color:#75715e">#openshift_master_htpasswd_file=&lt;path to local pre-generated htpasswd file&gt;</span>
+
+<span style="color:#75715e"># Native high availability cluster method with optional load balancer.</span>
+<span style="color:#75715e"># If no lb group is defined, the installer assumes that a load balancer has</span>
+<span style="color:#75715e"># been preconfigured. For installation the value of</span>
+<span style="color:#75715e"># openshift_master_cluster_hostname must resolve to the load balancer</span>
+<span style="color:#75715e"># or to one or all of the masters defined in the inventory if no load</span>
+<span style="color:#75715e"># balancer is present.</span>
+<span style="color:#a6e22e">openshift_master_cluster_method</span><span style="color:#f92672">=</span><span style="color:#e6db74">native</span>
+<span style="color:#a6e22e">openshift_master_cluster_hostname</span><span style="color:#f92672">=</span><span style="color:#e6db74">studentXX.example.com</span>
+<span style="color:#a6e22e">openshift_master_cluster_public_hostname</span><span style="color:#f92672">=</span><span style="color:#e6db74">studentXX.example.com</span>
+
+<span style="color:#75715e"># default subdomain to use for exposed routes</span>
+<span style="color:#a6e22e">openshift_master_default_subdomain</span><span style="color:#f92672">=</span><span style="color:#e6db74">apps.studentXX.example.com</span>
+
+<span style="color:#75715e"># default project node selector</span>
+<span style="color:#a6e22e">osm_default_node_selector</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;purpose=app&#39;</span>
+
+<span style="color:#75715e"># OpenShift Router Options</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># An OpenShift router will be created during install if there are</span>
+<span style="color:#75715e"># nodes present with labels matching the default router selector,</span>
+<span style="color:#75715e"># &#34;region=infra&#34;. Set openshift_node_labels per node as needed in</span>
+<span style="color:#75715e"># order to label nodes.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Example:</span>
+<span style="color:#75715e"># [nodes]</span>
+<span style="color:#75715e"># node.example.com openshift_node_labels=&#34;{&#39;region&#39;: &#39;infra&#39;}&#34;</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Router selector (optional)</span>
+<span style="color:#75715e"># Router will only be created if nodes matching this label are present.</span>
+<span style="color:#75715e"># Default value: &#39;region=infra&#39;</span>
+<span style="color:#a6e22e">openshift_hosted_router_selector</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;purpose=infra&#39;</span>
+
+<span style="color:#75715e"># Openshift Registry Options</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># An OpenShift registry will be created during install if there are</span>
+<span style="color:#75715e"># nodes present with labels matching the default registry selector,</span>
+<span style="color:#75715e"># &#34;region=infra&#34;. Set openshift_node_labels per node as needed in</span>
+<span style="color:#75715e"># order to label nodes.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Example:</span>
+<span style="color:#75715e"># [nodes]</span>
+<span style="color:#75715e"># node.example.com openshift_node_labels=&#34;{&#39;region&#39;: &#39;infra&#39;}&#34;</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Registry selector (optional)</span>
+<span style="color:#75715e"># Registry will only be created if nodes matching this label are present.</span>
+<span style="color:#75715e"># Default value: &#39;region=infra&#39;</span>
+<span style="color:#a6e22e">openshift_hosted_registry_selector</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;purpose=infra&#39;</span>
+
+<span style="color:#75715e"># Registry Storage Options</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># External NFS Host</span>
+<span style="color:#75715e"># NFS volume must already exist with path &#34;nfs_directory/volume_name&#34; on</span>
+<span style="color:#75715e"># the storage_host. For example, the remote volume path using these</span>
+<span style="color:#75715e"># options would be &#34;nfs.example.com:/exports/registry&#34;</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_kind</span><span style="color:#f92672">=</span><span style="color:#e6db74">nfs</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_access_modes</span><span style="color:#f92672">=</span><span style="color:#e6db74">[&#39;ReadWriteMany&#39;]</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_host</span><span style="color:#f92672">=</span><span style="color:#e6db74">instructor.example.com</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_nfs_directory</span><span style="color:#f92672">=</span><span style="color:#e6db74">/exports/studentXX</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_volume_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">registry</span>
+<span style="color:#a6e22e">openshift_hosted_registry_storage_volume_size</span><span style="color:#f92672">=</span><span style="color:#e6db74">10Gi</span>
+
+<span style="color:#75715e"># Metrics deployment</span>
+<span style="color:#75715e"># See: https://docs.openshift.com/enterprise/latest/install_config/cluster_metrics.html</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># By default metrics are not automatically deployed, set this to enable them</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_deploy</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Storage Options</span>
+<span style="color:#75715e"># If openshift_hosted_metrics_storage_kind is unset then metrics will be stored</span>
+<span style="color:#75715e"># in an EmptyDir volume and will be deleted when the cassandra pod terminates.</span>
+<span style="color:#75715e"># Storage options A &amp; B currently support only one cassandra pod which is</span>
+<span style="color:#75715e"># generally enough for up to 1000 pods. Additional volumes can be created</span>
+<span style="color:#75715e"># manually after the fact and metrics scaled per the docs.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Option B - External NFS Host</span>
+<span style="color:#75715e"># NFS volume must already exist with path &#34;nfs_directory/volume_name&#34; on</span>
+<span style="color:#75715e"># the storage_host. For example, the remote volume path using these</span>
+<span style="color:#75715e"># options would be &#34;nfs.example.com:/exports/metrics&#34;</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_kind</span><span style="color:#f92672">=</span><span style="color:#e6db74">nfs</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_access_modes</span><span style="color:#f92672">=</span><span style="color:#e6db74">[&#39;ReadWriteOnce&#39;]</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_host</span><span style="color:#f92672">=</span><span style="color:#e6db74">instructor.example.com</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_nfs_directory</span><span style="color:#f92672">=</span><span style="color:#e6db74">/exports/studentXX</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_volume_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">metrics</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_volume_size</span><span style="color:#f92672">=</span><span style="color:#e6db74">10Gi</span>
+<span style="color:#a6e22e">openshift_hosted_metrics_storage_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;storage&#39;: &#39;metrics&#39;}</span>
+
+<span style="color:#75715e"># Additional metrics settings</span>
+<span style="color:#a6e22e">openshift_metrics_cassandra_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+<span style="color:#a6e22e">openshift_metrics_hawkular_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+<span style="color:#a6e22e">openshift_metrics_heapster_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+
+<span style="color:#75715e"># Logging deployment</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Currently logging deployment is disabled by default, enable it by setting this</span>
+<span style="color:#a6e22e">openshift_hosted_logging_deploy</span><span style="color:#f92672">=</span><span style="color:#e6db74">true</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Logging storage config</span>
+<span style="color:#75715e"># Option B - External NFS Host</span>
+<span style="color:#75715e"># NFS volume must already exist with path &#34;nfs_directory/volume_name&#34; on</span>
+<span style="color:#75715e"># the storage_host. For example, the remote volume path using these</span>
+<span style="color:#75715e"># options would be &#34;nfs.example.com:/exports/logging&#34;</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_kind</span><span style="color:#f92672">=</span><span style="color:#e6db74">nfs</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_access_modes</span><span style="color:#f92672">=</span><span style="color:#e6db74">[&#39;ReadWriteOnce&#39;]</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_host</span><span style="color:#f92672">=</span><span style="color:#e6db74">instructor.example.com</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_nfs_directory</span><span style="color:#f92672">=</span><span style="color:#e6db74">/exports/studentXX</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_volume_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">logging</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_volume_size</span><span style="color:#f92672">=</span><span style="color:#e6db74">10Gi</span>
+<span style="color:#a6e22e">openshift_hosted_logging_storage_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;storage&#39;: &#39;logging&#39;}</span>
+
+<span style="color:#75715e"># Additional logging settings</span>
+<span style="color:#75715e"># See https://github.com/openshift/openshift-ansible/tree/release-3.6/roles/openshift_logging</span>
+<span style="color:#a6e22e">openshift_logging_es_cluster_size</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+<span style="color:#a6e22e">openshift_logging_es_memory_limit</span><span style="color:#f92672">=</span><span style="color:#e6db74">4G</span>
+<span style="color:#a6e22e">openshift_logging_es_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+<span style="color:#a6e22e">openshift_logging_curator_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+<span style="color:#a6e22e">openshift_logging_kibana_nodeselector</span><span style="color:#f92672">=</span><span style="color:#e6db74">{&#39;purpose&#39;: &#39;infra&#39;}</span>
+
+<span style="color:#75715e"># Configure the multi-tenant SDN plugin (default is &#39;redhat/openshift-ovs-subnet&#39;)</span>
+<span style="color:#a6e22e">os_sdn_network_plugin_name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;redhat/openshift-ovs-multitenant&#39;</span>
+
+<span style="color:#75715e"># Configure SDN cluster network and kubernetes service CIDR blocks. These</span>
+<span style="color:#75715e"># network blocks should be private and should not conflict with network blocks</span>
+<span style="color:#75715e"># in your infrastructure that pods may require access to. Can not be changed</span>
+<span style="color:#75715e"># after deployment.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># WARNING : Do not pick subnets that overlap with the default Docker bridge subnet of</span>
+<span style="color:#75715e"># 172.17.0.0/16.  Your installation will fail and/or your configuration change will</span>
+<span style="color:#75715e"># cause the Pod SDN or Cluster SDN to fail.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># WORKAROUND : If you must use an overlapping subnet, you can configure a non conflicting</span>
+<span style="color:#75715e"># docker0 CIDR range by adding &#39;--bip=192.168.2.1/24&#39; to DOCKER_NETWORK_OPTIONS</span>
+<span style="color:#75715e"># environment variable located in /etc/sysconfig/docker-network.</span>
+<span style="color:#a6e22e">osm_cluster_network_cidr</span><span style="color:#f92672">=</span><span style="color:#e6db74">10.128.0.0/14</span>
+<span style="color:#a6e22e">openshift_portal_net</span><span style="color:#f92672">=</span><span style="color:#e6db74">172.30.0.0/16</span>
+
+<span style="color:#75715e"># Configure master API and console ports.</span>
+<span style="color:#a6e22e">openshift_master_api_port</span><span style="color:#f92672">=</span><span style="color:#e6db74">443</span>
+<span style="color:#a6e22e">openshift_master_console_port</span><span style="color:#f92672">=</span><span style="color:#e6db74">443</span>
+
+<span style="color:#75715e"># host group for masters</span>
+<span style="color:#66d9ef">[masters]</span>
+<span style="color:#a6e22e">master.studentXX.example.com</span>
+
+<span style="color:#66d9ef">[etcd]</span>
+<span style="color:#a6e22e">master.studentXX.example.com</span>
+
+<span style="color:#75715e"># NOTE: Currently we require that masters be part of the SDN which requires that they also be nodes</span>
+<span style="color:#75715e"># However, in order to ensure that your masters are not burdened with running pods you should</span>
+<span style="color:#75715e"># make them unschedulable by adding openshift_schedulable=False any node that&#39;s also a master.</span>
+<span style="color:#66d9ef">[nodes]</span>
+<span style="color:#a6e22e">master.studentXX.example.com openshift_schedulable</span><span style="color:#f92672">=</span><span style="color:#e6db74">False</span>
+<span style="color:#a6e22e">infra.studentXX.example.com openshift_node_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{&#39;purpose&#39;: &#39;infra&#39;}&#34;</span>
+<span style="color:#a6e22e">app01.studentXX.example.com openshift_node_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{&#39;purpose&#39;: &#39;app&#39;}&#34;</span>
+<span style="color:#a6e22e">app02.studentXX.example.com openshift_node_labels</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{&#39;purpose&#39;: &#39;app&#39;}&#34;</span></code></pre></div>
+
+
+    
+
+
+
+
+
+
+
+<nav>
+  <ul class="pager">
+    
+      <li class="previous">
+        <a href="http://redhatgov.io/workshops/openshift_install/4-host-preparation-openshift/">&larr; Previous: Lab 5: OpenShift Host Preparation</a>
+      </li>
+    
+    
+      <li class="next">
+        <a href="http://redhatgov.io/workshops/openshift_install/7-verify/">Next: Lab 7: Verify Environment &rarr;</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+    <p class="text-center">
+      
+      <a href="http://redhatgov.io/workshops/openshift_install">Return to Workshop</a>
+    </p>
+  </div>
+</div>
+
+    <div id="page-footer" class="container">
+      <p class="text-center">
+        Copyright &copy; 2019 Red Hat, Inc.
+      </p>
+    </div>
+    <script type="text/javascript">
+      if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+          _satellite.pageBottom();
+      }
+    </script>
+  </body>
+</html>
+
